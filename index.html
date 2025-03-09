@@ -105,7 +105,7 @@
       
       // Counter animation
       const countEl = document.getElementById('star-count');
-      countEl.innerText = repoStats.totalStars;
+      countEl.innerText = (stargazers || []).length || 0;
       const finalCount = parseInt(countEl.innerText.replace(',', ''));
       let currentCount = 0;
       
